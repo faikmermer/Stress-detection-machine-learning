@@ -106,3 +106,4 @@ plt.ylabel("Kesinlik")
 plt.grid()
 plt.show()
     
+ 
