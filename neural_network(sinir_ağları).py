@@ -27,8 +27,10 @@ test_data /= std
 
 def build_model():
     model = keras.Sequential([
-        layers.Dense(64, activation="relu"),
-        layers.Dense(64, activation="relu"),
+        layers.Dense(32, activation="relu", 
+                     kernel_regularizer=regularizers.l2(0.002),
+        layers.Dense(16, activation="relu", 
+                     kernel_regularizer=regularizers.l2(0.002),
         layers.Dense(1, activation="sigmoid")
     ])
     model.compile(optimizer="rmsprop",
