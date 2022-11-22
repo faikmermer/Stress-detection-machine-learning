@@ -29,7 +29,7 @@ def build_model():
     model = keras.Sequential([
         layers.Dense(32, activation="relu", 
                      kernel_regularizer=regularizers.l2(0.002),
-        layers.Dense(16, activation="relu", 
+        layers.Dense(32, activation="relu", 
                      kernel_regularizer=regularizers.l2(0.002),
         layers.Dense(1, activation="sigmoid")
     ])
